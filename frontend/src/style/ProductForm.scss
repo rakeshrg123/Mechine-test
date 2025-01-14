@@ -1,0 +1,58 @@
+$product-form-bg: #ffffff;
+$primary-color: #f9a825; // Light orange
+$secondary-color: #ffffff;
+$error-color: #f44336; // Red for error messages
+$success-color: #4caf50; // Green for success messages
+
+.product-form {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 5rem;
+  background: $product-form-bg;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+  .form-title {
+    text-align: center;
+    color: $primary-color;
+    margin-bottom: 1rem;
+  }
+
+  .section-title {
+    color: $primary-color;
+    margin-top: 1rem;
+  }
+
+  .variant-item {
+    margin-bottom: 1rem;
+  }
+
+  .add-variant-button {
+    color: $primary-color;
+    border-color: $primary-color;
+    &:hover {
+      background: rgba($primary-color, 0.1);
+    }
+  }
+
+  .submit-button {
+    background-color: $primary-color;
+    color: $secondary-color;
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+
+  .error-message {
+    color: $error-color;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .success-message {
+    color: $success-color;
+    text-align: center;
+    margin-top: 1rem;
+  }
+}

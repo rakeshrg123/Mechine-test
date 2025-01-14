@@ -1,0 +1,102 @@
+// Global Styles for Product List
+.product-list-container {
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+  
+    .MuiTableContainer-root {
+      background-color: #fff;
+      box-shadow: none;
+    }
+  
+    .MuiTable-root {
+      width: 100%;
+      border-collapse: collapse;
+    }
+  
+    .MuiTableHead-root {
+      background-color: #f7f7f7;
+    }
+  
+    .MuiTableCell-head {
+      font-weight: bold;
+      color: #FF7F32;
+      font-size: 16px;
+    }
+  
+    .MuiTableCell-body {
+      color: #333;
+      font-size: 14px;
+    }
+  
+    .MuiTypography-root {
+      color: #FF7F32;
+    }
+  
+    // Product Name
+    .MuiTableCell-head {
+      color: #FF7F32;
+      font-size: 16px;
+    }
+  
+    // Button Styles
+    .MuiButton-contained {
+      background-color: #FF7F32;
+      color: white;
+      &:hover {
+        background-color: darkorange;
+      }
+    }
+  
+    .MuiButton-outlined {
+      color: #FF7F32;
+      border-color: #FF7F32;
+      &:hover {
+        background-color: rgba(255, 127, 50, 0.1);
+      }
+    }
+  
+    .MuiFormControl-root {
+      margin-bottom: 10px;
+    }
+  
+    .MuiInputLabel-root {
+      color: #FF7F32;
+    }
+  
+    .MuiSelect-root {
+      color: #333;
+    }
+  
+    // Quantity input field styles
+    .MuiTextField-root {
+      margin-bottom: 10px;
+    }
+  
+    .admin-actions {
+      display: flex;
+      gap: 10px;
+    }
+  
+    .MuiTableRow-root {
+      margin-bottom: 10px;
+      &:hover {
+        background-color: #f4f4f4;
+      }
+    }
+  }
+  
+  // General Styles for Page
+  body {
+    background-color: #f9f9f9;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,40 @@
+version: '3'
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "5000:5000"
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/ecommerce  
+    depends_on:
+      - mongo
+    networks:
+      - app-network
+
+  mongo:
+    image: mongo:latest
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - app-network
+    ports:
+      - "27017:27017"
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  mongodb_data:
